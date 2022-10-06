@@ -5,11 +5,6 @@
     )
 }}
 
--- commit1 from vscode
--- commit1 from vscode
--- commit1 from vscode
--- {{ ref('dim_customers') }}
-
 with customer as (
 
     select * from {{ ref('stg_tpch_customers') }}
