@@ -5,6 +5,9 @@
     )
 }}
 
+
+-- No I have made a change
+
 with customer as (
 
     select * from {{ ref('stg_tpch_customers') }}
@@ -44,3 +47,6 @@ from
     final
 order by
     customer_key
+
+
+limit 25
