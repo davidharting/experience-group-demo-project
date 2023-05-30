@@ -7,7 +7,7 @@ with source as (
 renamed as (
 
     select
-    
+
         p_partkey as part_key,
         p_name as name,
         p_mfgr as manufacturer,
@@ -23,3 +23,6 @@ renamed as (
 )
 
 select * from renamed
+
+
+-- doing stuffsss
