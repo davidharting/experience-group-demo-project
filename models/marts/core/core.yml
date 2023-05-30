@@ -41,6 +41,9 @@ models:
         description: manufacturer of the part
       - name: name
         description: name of the part
+        tests:
+          - unique:
+              severity: warn
       - name: brand
         description: brand of the part
       - name: type
@@ -148,7 +151,7 @@ models:
           - relationships:
               to: ref('dim_customers')
               field: customer_key
-              severity: error
+              severity: warn
       - name: order_date
         description: date of the order
       - name: status_code

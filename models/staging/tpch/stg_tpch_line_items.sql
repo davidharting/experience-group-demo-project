@@ -29,7 +29,7 @@ renamed as (
         l_shipmode as ship_mode,
         l_comment as comment
 
-    from source
+from source
 
 )
 
