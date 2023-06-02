@@ -65,12 +65,21 @@ models:
           - not_null
       - name: supplier_name
         description: '{{ doc("supplier_name") }}'
+        tests:
+          - unique:
+              severity: warn
       - name: supplier_address
         description: '{{ doc("supplier_address") }}'
       - name: nation
         description: nation name
+        tests:
+          - unique:
+              severity: warn
       - name: region
         description: region name
+        tests:
+          - unique:
+              severity: error
       - name: phone_number
         description: '{{ doc("phone_number") }}'
       - name: account_balance
