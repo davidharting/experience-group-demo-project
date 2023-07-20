@@ -1,6 +1,5 @@
 # the intent of this .md is to remove redundancy in the documentation
 
-
 # the below are descriptions from stg_tpch_line_items
 
 {% docs order_item_key %} surrogate key for the model -- combo of order_key + line_number {% enddocs %}
@@ -22,7 +21,6 @@
 {% docs extended_price %} line item price {% enddocs %}
 
 {% docs discount_percentage %} percentage of the discount {% enddocs %}
-
 
 # the below are descriptions from stg_tpch_supppliers
 
