@@ -14,7 +14,11 @@ part_supplier as (
     
     select * from {{ ref('part_suppliers') }}
 
-),
+), -- something 
+-- something     
+-- save  
+-- save
+-- save
 final as (
     select 
         order_item.order_item_key,
@@ -31,7 +35,7 @@ final as (
         order_item.receipt_date,
         order_item.ship_mode,
         part_supplier.cost as supplier_cost,
-        {# ps.retail_price, #}
+        {# ps.retail_price, #}. -- something
         order_item.base_price,
         order_item.discount_percentage,
         order_item.discounted_price,
@@ -45,7 +49,7 @@ final as (
         order_item.item_tax_amount,
         order_item.net_item_sales_amount
 
-    from
+    from -- save
         order_item
         inner join part_supplier
             on order_item.part_key = part_supplier.part_key and

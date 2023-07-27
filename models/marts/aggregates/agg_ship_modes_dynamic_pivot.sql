@@ -10,7 +10,7 @@
 {% set ship_modes = load_result('result').table.columns[0].values() %}
 
 select
-    date_part('year', order_date) as order_year,
+    date_part('year', order_date) as order_year,  
 
     {# Loop over ship_modes array from above, and sum based on whether the record matches the ship mode #}
     {%- for ship_mode in ship_modes -%}
@@ -20,3 +20,13 @@ select
 
 from {{ ref('fct_order_items') }}
 group by 1
+
+
+-- something something. 
+--- something
+
+-- something
+
+
+
+-- save
