@@ -1,0 +1,1 @@
+select {{ get_data() }} as num

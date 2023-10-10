@@ -1,0 +1,1 @@
+select '{{ this.identifier }}' as model_id

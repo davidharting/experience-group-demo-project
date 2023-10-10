@@ -10,3 +10,10 @@ seeds:
        description: effective date of contract
      - name: rate
        description: rate based on the effective date
+
+- name: yoinks
+  config:
+    column_types:
+      yes: number
+      true: number
+      off: number
